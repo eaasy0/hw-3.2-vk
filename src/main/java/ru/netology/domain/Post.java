@@ -3,18 +3,17 @@ package ru.netology.domain;
 public class Post {
 
     private int id;
-    private int postId;
+    private int ownerId;
+    private int fromID;
+    private int createdBy;
     private int date;
-    private String username;
-    private String text;
-    private String postImage;
-    private String likes;
+    private int replyOwnerId;
+    private int replyPostId;
+    private boolean friendsOnly;
     private String commentsInfo;
-
-
-    public void setCommentsInfo(String commentsInfo) {
-        this.commentsInfo = commentsInfo;
-    }
+    private String copyright;
+    private String likesInfo;
+    private String repostsInfo;
 
     public int getId() {
         return id;
@@ -24,12 +23,28 @@ public class Post {
         this.id = id;
     }
 
-    public int getPostId() {
-        return postId;
+    public int getOwnerId() {
+        return ownerId;
     }
 
-    public void setPostId(int postId) {
-        this.postId = postId;
+    public void setOwnerId(int ownerId) {
+        this.ownerId = ownerId;
+    }
+
+    public int getFromID() {
+        return fromID;
+    }
+
+    public void setFromID(int fromID) {
+        this.fromID = fromID;
+    }
+
+    public int getCreatedBy() {
+        return createdBy;
+    }
+
+    public void setCreatedBy(int createdBy) {
+        this.createdBy = createdBy;
     }
 
     public int getDate() {
@@ -40,38 +55,59 @@ public class Post {
         this.date = date;
     }
 
-    public String getUsername() {
-        return username;
+    public int getReplyOwnerId() {
+        return replyOwnerId;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setReplyOwnerId(int replyOwnerId) {
+        this.replyOwnerId = replyOwnerId;
     }
 
-    public String getText() {
-        return text;
+    public int getReplyPostId() {
+        return replyPostId;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setReplyPostId(int replyPostId) {
+        this.replyPostId = replyPostId;
     }
 
-    public String getPostImage() {
-        return postImage;
+    public boolean isFriendsOnly() {
+        return friendsOnly;
     }
 
-    public void setPostImage(String postImage) {
-        this.postImage = postImage;
+    public void setFriendsOnly(boolean friendsOnly) {
+        this.friendsOnly = friendsOnly;
     }
 
-    public String getLikes() {
-        return likes;
-    }
-
-    public void setLikes(String likes) {
-        this.likes = likes;
-    }
     public String getCommentsInfo() {
         return commentsInfo;
+    }
+
+    public void setCommentsInfo(String commentsInfo) {
+        this.commentsInfo = commentsInfo;
+    }
+
+    public String getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(String copyright) {
+        this.copyright = copyright;
+    }
+
+    public String getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(String likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public String getRepostsInfo() {
+        return repostsInfo;
+    }
+
+    public void setRepostsInfo(String repostsInfo) {
+        this.repostsInfo = repostsInfo;
     }
 }
