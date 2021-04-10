@@ -173,5 +173,67 @@ public class Post {
     private boolean markedAsAds;
     private boolean isFavorite;
     private int postponedId;
+    private LikesInfo likesinfo;
+    private Copyright copyright;
+    private RepostsInfo RepostsInfo;
+    private ViewsInfo ViewsInfo;
+    private Geo geo;
+    private Donut donut;
+    private CommentsInfo commentsInfo;
 
+    public LikesInfo getLikesinfo() {
+        return likesinfo;
+    }
+
+    public void setLikesinfo(LikesInfo likesinfo) {
+        this.likesinfo = likesinfo;
+    }
+
+    public Copyright getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(Copyright copyright) {
+        this.copyright = copyright;
+    }
+
+    public ru.netology.domain.RepostsInfo getRepostsInfo() {
+        return RepostsInfo;
+    }
+
+    public void setRepostsInfo(ru.netology.domain.RepostsInfo repostsInfo) {
+        RepostsInfo = repostsInfo;
+    }
+
+    public ru.netology.domain.ViewsInfo getViewsInfo() {
+        return ViewsInfo;
+    }
+
+    public void setViewsInfo(ru.netology.domain.ViewsInfo viewsInfo) {
+        ViewsInfo = viewsInfo;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public Donut getDonut() {
+        return donut;
+    }
+
+    public void setDonut(Donut donut) {
+        this.donut = donut;
+    }
+
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
+    }
+
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
+    }
 }
